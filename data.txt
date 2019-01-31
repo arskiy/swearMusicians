@@ -1,0 +1,36 @@
+50_cent: I have detected 7922 curse words, in a total of 254388 words. This means that in average, every 32 words is a slang.
+
+21_savage: I have detected 1466 curse words, in a total of 31023 words. This means that in average, every 21 words is a slang.
+
+Big_Boi: I have detected 864 curse words, in a total of 35970 words. This means that in average, every 41 words is a slang.
+
+B-Real: I have detected 154 curse words, in a total of 6981 words. This means that in average, every 45 words is a slang.
+
+Machine_Gun_Kelly: I have detected 1575 curse words, in a total of 68818 words. This means that in average, every 43 words is a slang.
+
+Eminem: I have detected 10513 curse words, in a total of 393558 words. This means that in average, every 37 words is a slang.
+
+Snoop_Dogg: I have detected 7083 curse words, in a total of 256696 words. This means that in average, every 36 words is a slang.
+
+Nicki Minaj: I have detected 3430 curse words, in a total of 131489 words. This means that in average, every 38 words is a slang.
+
+Tyler, The Creator: I have detected 1781 curse words, in a total of 44263 words. This means that in average, every 24 words is a slang.
+
+Dj_Khaled: I have detected 2593 curse words, in a total of 108580 words. This means that in average, every 41 words is a slang.
+
+Migos: I have detected 2500 curse words, in a total of 87143 words. This means that in average, every 34 words is a slang.
+
+Kendrick_Lamar: I have detected 2286 curse words, in a total of 84223 words. This means that in average, every 36 words is a slang.
+
+Lil_Peep: I have detected 115 curse words, in a total of 6222 words. This means that in average, every 54 words is a slang.
+
+Lil_Pump: I have detected 326 curse words, in a total of 9190 words. This means that in average, every 28 words is a slang.
+
+Lil_Wayne: I have detected 16641 curse words, in a total of 521529 words. This means that in average, every 31 words is a slang.
+
+Lil_Uzi_Vert: I have detected 941 curse words, in a total of 34362 words. This means that in average, every 36 words is a slang.
+
+Soulja_Boy: I have detected 1805 curse words, in a total of 76853 words. This means that in average, every 42 words is a slang.
+
+
+
