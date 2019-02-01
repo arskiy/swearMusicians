@@ -74,7 +74,7 @@ def getNames():
         for nam in name:
             nam = nam.replace('%27', '\'')
     
-    return names
+    return ''.join(names).encode('utf-8')
 
 def getLyrics():
     #   Clear the text file
