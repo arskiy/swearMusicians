@@ -1,26 +1,43 @@
 import matplotlib.pyplot as plt
-import pandas as pd
+
+def makegraph(data, artists, fieldname, destination = "f"):
+    """
+    Inputs: 
+    data object (dict), 
+    artists (list of artist names as strings), 
+    fieldname (which field of data object you wish graph to be plotted against.)
+    destination (string) one of: 's': to output graph to screen or 'f': output graph to png file. (default : file)
+    
+    Output: 
+    Horizontal Bargraph of artists vs fieldname given.
+    
+    Example Input:
+    data ={'Number of Words': [254388, 31023, 6981], 'Number of slangs': [7922, 1466, 154], 'Average of words until a slang': [32, 21, 45]}
+    artists = ['50_cent', '21_savage', 'B-Real']
+    makegraph(data, artists, 'Number of Words', 's')
+    
+    This will plot a graph of rappers vs Number of words on the screen.
+    """    
+    # The parameter to plot on the x-axis.
+    x_parameter = data[fieldname]
+
+    # Setting the theme to use for the plot.
+    plt.style.use('seaborn')
+    # Variables to refer to the figure and the axes for separate customization (fontsize etc)
+    fig, ax = plt.subplots()
+    ax.barh(artists, x_parameter)
+    labels = [ax.get_xticklabels(),ax.get_yticklabels()]
+    plt.setp(labels,fontsize=12)
+    plt.xlabel(fieldname ,fontsize =18)
+    plt.title("Comparison of rappers " + fieldname, fontsize = 20)
+    
+    if destination == "s":
+        # plt.show() draws the graph to screen.
+        plt.show()
+    elif destination == "f":
+        # Saves the figure to file, the dpi is quality, the bbox tight makes the figure not get cropped out.
+        fig.savefig("fig.png", dpi=180, bbox_inches="tight")
 
 
-artists = ['50_cent', '21_savage', 'B-Real', 'Machine_Gun_Kelly', 'Eminem', 'Snoop_Dogg', 'Nicki Minaj', 'Tyler, The Creator', 'Dj_Khaled', 'Migos', 'Kendrick_Lamar', 'Lil_Peep', 'Lil_Pump', 'Lil_Wayne', 'Lil_Uzi_Vert', 'Soulja_Boy']
 
-data = {'Number of Words': [254388, 31023, 6981, 68818, 393558, 256696, 131489, 44263, 108580, 87143, 84223, 6222, 9190, 521529, 34362, 76853], 'Number of slangs': [7922, 1466, 154, 1575, 10513, 7083, 3430, 1781, 2593, 2500, 2286, 115, 326, 16641, 941, 1805], 'Average of words until a slang': [32, 21, 45, 43, 37, 36, 38, 24, 41, 34, 36, 54, 28, 31, 36, 42]}
-
-df = pd.DataFrame(data, 
-        columns = ["Number of Words","Number of slangs","Average of words until a slang"],
-        index = artists
-        )
-
-wordstoslang = data["Average of words until a slang"]
-
-plt.style.use('seaborn')
-fig, ax = plt.subplots()
-ax.barh(artists, wordstoslang)
-labels = [ax.get_xticklabels(),ax.get_yticklabels()]
-plt.setp(labels,fontsize=12)
-
-plt.xlabel("Average words between 2 consecutive swears",fontsize =18)
-plt.title("Comparison of rapper swearing",fontsize = 20)
-plt.show()
-fig.savefig("fig.png",dpi=180,bbox_inches="tight")
 
