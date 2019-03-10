@@ -8,7 +8,7 @@ Because this is a Python script that analyzes which are the hip-hop musicians th
 This is a graph I made quickly on GIMP to show the discrepancies between the musician that swears the least (Lil' Peep)
 with the one who swears the MOST (21 Savage)
 
-The actual results where 
+The actual results were 
 ![image](https://imgur.com/YAnr80O.png)
 
 The script is very crappy and cannot detect some songs that use ascii characters, despite my effort to escape them.
